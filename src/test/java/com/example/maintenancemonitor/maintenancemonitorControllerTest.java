@@ -15,4 +15,11 @@ class maintenancemonitorControllerTest {
         assertEquals(defaultmessage, maintenancemonitorController.message());
     }
 
+    @Test
+    void set() {
+        String newmessage = "test";
+        maintenancemonitorController.set(newmessage);
+        assertEquals(newmessage, maintenancemonitorController.message());
+    }
+
 }
