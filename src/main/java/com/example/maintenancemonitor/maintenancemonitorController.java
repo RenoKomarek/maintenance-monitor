@@ -23,4 +23,10 @@ public class maintenancemonitorController {
         return ok;
     }
 
+    @RequestMapping("/api/message/reset")
+    public String reset(){
+        m = defaultmessage;
+        return ok;
+    }
+
 }

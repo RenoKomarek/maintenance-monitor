@@ -22,4 +22,12 @@ class maintenancemonitorControllerTest {
         assertEquals(newmessage, maintenancemonitorController.message());
     }
 
+    @Test
+    void reset(){
+        String newmessage = "reset";
+        maintenancemonitorController.set(newmessage);
+        maintenancemonitorController.reset();
+        assertEquals(defaultmessage, maintenancemonitorController.message());
+    }
+
 }
